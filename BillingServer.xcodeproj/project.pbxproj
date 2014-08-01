@@ -12,6 +12,12 @@
 		A17B6A71198B5A120056198F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17B6A70198B5A120056198F /* Images.xcassets */; };
 		A17B6A74198B5A120056198F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17B6A72198B5A120056198F /* MainMenu.xib */; };
 		A17B6A80198B5A120056198F /* BillingServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A7F198B5A120056198F /* BillingServerTests.m */; };
+		A17B6A8D198B62260056198F /* Web in Resources */ = {isa = PBXBuildFile; fileRef = A17B6A8C198B62260056198F /* Web */; };
+		A17B6A8F198B62320056198F /* CreateSchema.sql in Resources */ = {isa = PBXBuildFile; fileRef = A17B6A8E198B62320056198F /* CreateSchema.sql */; };
+		A17B6A91198B62920056198F /* FamilyController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A90198B62920056198F /* FamilyController.m */; };
+		A17B6A94198B63350056198F /* DatabaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A93198B63350056198F /* DatabaseFactory.m */; };
+		A17B6A99198B64F10056198F /* APIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A98198B64F10056198F /* APIConnection.m */; };
+		BDC66C7517DD4EE3A8FCB582 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBC5D73E8964D9798BF42ED /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EBC5D73E8964D9798BF42ED /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4DF0F68CFB42588A47F2D2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A17B6A66198B5A120056198F /* BillingServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillingServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17B6A6A198B5A120056198F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A17B6A6B198B5A120056198F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,6 +43,13 @@
 		A17B6A79198B5A120056198F /* BillingServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillingServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17B6A7E198B5A120056198F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A17B6A7F198B5A120056198F /* BillingServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillingServerTests.m; sourceTree = "<group>"; };
+		A17B6A8C198B62260056198F /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Web; path = Resources/Web; sourceTree = "<group>"; };
+		A17B6A8E198B62320056198F /* CreateSchema.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CreateSchema.sql; path = Resources/CreateSchema.sql; sourceTree = "<group>"; };
+		A17B6A90198B62920056198F /* FamilyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FamilyController.m; path = Controllers/FamilyController.m; sourceTree = "<group>"; };
+		A17B6A92198B63350056198F /* DatabaseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatabaseFactory.h; path = Infrastructure/DatabaseFactory.h; sourceTree = "<group>"; };
+		A17B6A93198B63350056198F /* DatabaseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatabaseFactory.m; path = Infrastructure/DatabaseFactory.m; sourceTree = "<group>"; };
+		A17B6A97198B64F10056198F /* APIConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIConnection.h; path = Infrastructure/APIConnection.h; sourceTree = "<group>"; };
+		A17B6A98198B64F10056198F /* APIConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIConnection.m; path = Infrastructure/APIConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC66C7517DD4EE3A8FCB582 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +77,8 @@
 				A17B6A68198B5A120056198F /* BillingServer */,
 				A17B6A7C198B5A120056198F /* BillingServerTests */,
 				A17B6A67198B5A120056198F /* Products */,
+				3C4DF0F68CFB42588A47F2D2 /* Pods.xcconfig */,
+				B9A61FB41F2940D78653A417 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +98,9 @@
 				A17B6A6E198B5A120056198F /* AppDelegate.m */,
 				A17B6A70198B5A120056198F /* Images.xcassets */,
 				A17B6A72198B5A120056198F /* MainMenu.xib */,
+				A17B6A89198B61050056198F /* Infrastructure */,
+				A17B6A8B198B613E0056198F /* Controllers */,
+				A17B6A8A198B61190056198F /* Resources */,
 				A17B6A69198B5A120056198F /* Supporting Files */,
 			);
 			path = BillingServer;
@@ -111,6 +132,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A17B6A89198B61050056198F /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				A17B6A92198B63350056198F /* DatabaseFactory.h */,
+				A17B6A93198B63350056198F /* DatabaseFactory.m */,
+				A17B6A97198B64F10056198F /* APIConnection.h */,
+				A17B6A98198B64F10056198F /* APIConnection.m */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		A17B6A8A198B61190056198F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A17B6A8E198B62320056198F /* CreateSchema.sql */,
+				A17B6A8C198B62260056198F /* Web */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A17B6A8B198B613E0056198F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A17B6A90198B62920056198F /* FamilyController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B9A61FB41F2940D78653A417 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EBC5D73E8964D9798BF42ED /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A17B6A83198B5A120056198F /* Build configuration list for PBXNativeTarget "BillingServer" */;
 			buildPhases = (
+				80072810AE0C43EDA5E74DDD /* Check Pods Manifest.lock */,
 				A17B6A62198B5A120056198F /* Sources */,
 				A17B6A63198B5A120056198F /* Frameworks */,
 				A17B6A64198B5A120056198F /* Resources */,
+				4A99D737608C4594BA930822 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,8 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17B6A8D198B62260056198F /* Web in Resources */,
 				A17B6A71198B5A120056198F /* Images.xcassets in Resources */,
 				A17B6A74198B5A120056198F /* MainMenu.xib in Resources */,
+				A17B6A8F198B62320056198F /* CreateSchema.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,12 +266,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A99D737608C4594BA930822 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80072810AE0C43EDA5E74DDD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A17B6A62198B5A120056198F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17B6A91198B62920056198F /* FamilyController.m in Sources */,
+				A17B6A94198B63350056198F /* DatabaseFactory.m in Sources */,
 				A17B6A6F198B5A120056198F /* AppDelegate.m in Sources */,
+				A17B6A99198B64F10056198F /* APIConnection.m in Sources */,
 				A17B6A6C198B5A120056198F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +420,7 @@
 		};
 		A17B6A84198B5A120056198F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4DF0F68CFB42588A47F2D2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -334,6 +432,7 @@
 		};
 		A17B6A85198B5A120056198F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4DF0F68CFB42588A47F2D2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -398,6 +497,7 @@
 				A17B6A85198B5A120056198F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A17B6A86198B5A120056198F /* Build configuration list for PBXNativeTarget "BillingServerTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +506,7 @@
 				A17B6A88198B5A120056198F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
