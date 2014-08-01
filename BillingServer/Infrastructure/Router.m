@@ -44,6 +44,9 @@
         {
             controller = [remainder substringToIndex:slashRange.location];
             itemId = [remainder substringFromIndex:slashRange.location + 1];
+            
+            if ([itemId length] == 0)
+                itemId = nil;
         }
         
         controller = [controller singularizedString];

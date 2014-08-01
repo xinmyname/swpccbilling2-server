@@ -104,4 +104,22 @@
     XCTAssert([[route itemId] isEqualToString:@"42"]);
 }
 
+- (void)testItemTrailingSlashAfterController_ActionIsFindAll
+{
+    Route* route = [_router routeForVerb:@"GET" withPath:@"/api/samples/"];
+    XCTAssertEqual([route action], RouteActionFindAll);
+}
+
+- (void)testItemTrailingSlashAfterController_ControllerIsCorrect
+{
+    Route* route = [_router routeForVerb:@"GET" withPath:@"/api/samples/"];
+    XCTAssert([[route controller] isEqualToString:@"Sample"]);
+}
+
+- (void)testItemTrailingSlashAfterController_ItemIdIsNil
+{
+    Route* route = [_router routeForVerb:@"GET" withPath:@"/api/samples/"];
+    XCTAssertNil([route itemId]);
+}
+
 @end

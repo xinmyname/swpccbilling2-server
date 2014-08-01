@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1533E6E198C31B4009C4A32 /* FamilyController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1533E6D198C31B4009C4A32 /* FamilyController.m */; };
 		A17B6A6C198B5A120056198F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A6B198B5A120056198F /* main.m */; };
 		A17B6A6F198B5A120056198F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A6E198B5A120056198F /* AppDelegate.m */; };
 		A17B6A71198B5A120056198F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17B6A70198B5A120056198F /* Images.xcassets */; };
@@ -14,7 +15,6 @@
 		A17B6A80198B5A120056198F /* BillingServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A7F198B5A120056198F /* BillingServerTests.m */; };
 		A17B6A8D198B62260056198F /* Web in Resources */ = {isa = PBXBuildFile; fileRef = A17B6A8C198B62260056198F /* Web */; };
 		A17B6A8F198B62320056198F /* CreateSchema.sql in Resources */ = {isa = PBXBuildFile; fileRef = A17B6A8E198B62320056198F /* CreateSchema.sql */; };
-		A17B6A91198B62920056198F /* FamilyController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A90198B62920056198F /* FamilyController.m */; };
 		A17B6A94198B63350056198F /* DatabaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A93198B63350056198F /* DatabaseFactory.m */; };
 		A17B6A99198B64F10056198F /* APIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A98198B64F10056198F /* APIConnection.m */; };
 		A1FD6816198B6A580073705C /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FD6813198B6A580073705C /* Route.m */; };
@@ -35,6 +35,9 @@
 /* Begin PBXFileReference section */
 		1EBC5D73E8964D9798BF42ED /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4DF0F68CFB42588A47F2D2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A1533E6B198C3141009C4A32 /* ControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControllerDelegate.h; path = Infrastructure/ControllerDelegate.h; sourceTree = "<group>"; };
+		A1533E6C198C31B4009C4A32 /* FamilyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FamilyController.h; path = Controllers/FamilyController.h; sourceTree = "<group>"; };
+		A1533E6D198C31B4009C4A32 /* FamilyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FamilyController.m; path = Controllers/FamilyController.m; sourceTree = "<group>"; };
 		A17B6A66198B5A120056198F /* BillingServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillingServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17B6A6A198B5A120056198F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A17B6A6B198B5A120056198F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,7 +50,6 @@
 		A17B6A7F198B5A120056198F /* BillingServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillingServerTests.m; sourceTree = "<group>"; };
 		A17B6A8C198B62260056198F /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Web; path = Resources/Web; sourceTree = "<group>"; };
 		A17B6A8E198B62320056198F /* CreateSchema.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CreateSchema.sql; path = Resources/CreateSchema.sql; sourceTree = "<group>"; };
-		A17B6A90198B62920056198F /* FamilyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FamilyController.m; path = Controllers/FamilyController.m; sourceTree = "<group>"; };
 		A17B6A92198B63350056198F /* DatabaseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatabaseFactory.h; path = Infrastructure/DatabaseFactory.h; sourceTree = "<group>"; };
 		A17B6A93198B63350056198F /* DatabaseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatabaseFactory.m; path = Infrastructure/DatabaseFactory.m; sourceTree = "<group>"; };
 		A17B6A97198B64F10056198F /* APIConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIConnection.h; path = Infrastructure/APIConnection.h; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		A17B6A89198B61050056198F /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				A1533E6B198C3141009C4A32 /* ControllerDelegate.h */,
 				A1FD6812198B6A580073705C /* Route.h */,
 				A1FD6813198B6A580073705C /* Route.m */,
 				A1FD6814198B6A580073705C /* Router.h */,
@@ -165,7 +168,8 @@
 		A17B6A8B198B613E0056198F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A17B6A90198B62920056198F /* FamilyController.m */,
+				A1533E6C198C31B4009C4A32 /* FamilyController.h */,
+				A1533E6D198C31B4009C4A32 /* FamilyController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -314,12 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A17B6A91198B62920056198F /* FamilyController.m in Sources */,
 				A17B6A94198B63350056198F /* DatabaseFactory.m in Sources */,
 				A17B6A6F198B5A120056198F /* AppDelegate.m in Sources */,
 				A1FD6816198B6A580073705C /* Route.m in Sources */,
 				A17B6A99198B64F10056198F /* APIConnection.m in Sources */,
 				A1FD6817198B6A580073705C /* Router.m in Sources */,
+				A1533E6E198C31B4009C4A32 /* FamilyController.m in Sources */,
 				A17B6A6C198B5A120056198F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
