@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A17B6A6C198B5A120056198F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A6B198B5A120056198F /* main.m */; };
+		A17B6A6F198B5A120056198F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A6E198B5A120056198F /* AppDelegate.m */; };
+		A17B6A71198B5A120056198F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17B6A70198B5A120056198F /* Images.xcassets */; };
+		A17B6A74198B5A120056198F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A17B6A72198B5A120056198F /* MainMenu.xib */; };
+		A17B6A80198B5A120056198F /* BillingServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A7F198B5A120056198F /* BillingServerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A17B6A7A198B5A120056198F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A17B6A5E198B5A120056198F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A17B6A65198B5A120056198F;
+			remoteInfo = BillingServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A17B6A66198B5A120056198F /* BillingServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillingServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17B6A6A198B5A120056198F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17B6A6B198B5A120056198F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A17B6A6D198B5A120056198F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A17B6A6E198B5A120056198F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A17B6A70198B5A120056198F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A17B6A73198B5A120056198F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A17B6A79198B5A120056198F /* BillingServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillingServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17B6A7E198B5A120056198F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17B6A7F198B5A120056198F /* BillingServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillingServerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A17B6A63198B5A120056198F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17B6A76198B5A120056198F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A17B6A5D198B5A120056198F = {
+			isa = PBXGroup;
+			children = (
+				A17B6A68198B5A120056198F /* BillingServer */,
+				A17B6A7C198B5A120056198F /* BillingServerTests */,
+				A17B6A67198B5A120056198F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A17B6A67198B5A120056198F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A17B6A66198B5A120056198F /* BillingServer.app */,
+				A17B6A79198B5A120056198F /* BillingServerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A17B6A68198B5A120056198F /* BillingServer */ = {
+			isa = PBXGroup;
+			children = (
+				A17B6A6D198B5A120056198F /* AppDelegate.h */,
+				A17B6A6E198B5A120056198F /* AppDelegate.m */,
+				A17B6A70198B5A120056198F /* Images.xcassets */,
+				A17B6A72198B5A120056198F /* MainMenu.xib */,
+				A17B6A69198B5A120056198F /* Supporting Files */,
+			);
+			path = BillingServer;
+			sourceTree = "<group>";
+		};
+		A17B6A69198B5A120056198F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A17B6A6A198B5A120056198F /* Info.plist */,
+				A17B6A6B198B5A120056198F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A17B6A7C198B5A120056198F /* BillingServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A17B6A7F198B5A120056198F /* BillingServerTests.m */,
+				A17B6A7D198B5A120056198F /* Supporting Files */,
+			);
+			path = BillingServerTests;
+			sourceTree = "<group>";
+		};
+		A17B6A7D198B5A120056198F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A17B6A7E198B5A120056198F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A17B6A65198B5A120056198F /* BillingServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17B6A83198B5A120056198F /* Build configuration list for PBXNativeTarget "BillingServer" */;
+			buildPhases = (
+				A17B6A62198B5A120056198F /* Sources */,
+				A17B6A63198B5A120056198F /* Frameworks */,
+				A17B6A64198B5A120056198F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BillingServer;
+			productName = BillingServer;
+			productReference = A17B6A66198B5A120056198F /* BillingServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A17B6A78198B5A120056198F /* BillingServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17B6A86198B5A120056198F /* Build configuration list for PBXNativeTarget "BillingServerTests" */;
+			buildPhases = (
+				A17B6A75198B5A120056198F /* Sources */,
+				A17B6A76198B5A120056198F /* Frameworks */,
+				A17B6A77198B5A120056198F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A17B6A7B198B5A120056198F /* PBXTargetDependency */,
+			);
+			name = BillingServerTests;
+			productName = BillingServerTests;
+			productReference = A17B6A79198B5A120056198F /* BillingServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A17B6A5E198B5A120056198F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Andy Sherwood";
+				TargetAttributes = {
+					A17B6A65198B5A120056198F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A17B6A78198B5A120056198F = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A17B6A65198B5A120056198F;
+					};
+				};
+			};
+			buildConfigurationList = A17B6A61198B5A120056198F /* Build configuration list for PBXProject "BillingServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A17B6A5D198B5A120056198F;
+			productRefGroup = A17B6A67198B5A120056198F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A17B6A65198B5A120056198F /* BillingServer */,
+				A17B6A78198B5A120056198F /* BillingServerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A17B6A64198B5A120056198F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17B6A71198B5A120056198F /* Images.xcassets in Resources */,
+				A17B6A74198B5A120056198F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17B6A77198B5A120056198F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A17B6A62198B5A120056198F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17B6A6F198B5A120056198F /* AppDelegate.m in Sources */,
+				A17B6A6C198B5A120056198F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17B6A75198B5A120056198F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17B6A80198B5A120056198F /* BillingServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A17B6A7B198B5A120056198F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A17B6A65198B5A120056198F /* BillingServer */;
+			targetProxy = A17B6A7A198B5A120056198F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A17B6A72198B5A120056198F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A17B6A73198B5A120056198F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A17B6A81198B5A120056198F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A17B6A82198B5A120056198F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A17B6A84198B5A120056198F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BillingServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A17B6A85198B5A120056198F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BillingServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A17B6A87198B5A120056198F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BillingServer.app/Contents/MacOS/BillingServer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BillingServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		A17B6A88198B5A120056198F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BillingServer.app/Contents/MacOS/BillingServer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BillingServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A17B6A61198B5A120056198F /* Build configuration list for PBXProject "BillingServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17B6A81198B5A120056198F /* Debug */,
+				A17B6A82198B5A120056198F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A17B6A83198B5A120056198F /* Build configuration list for PBXNativeTarget "BillingServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17B6A84198B5A120056198F /* Debug */,
+				A17B6A85198B5A120056198F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A17B6A86198B5A120056198F /* Build configuration list for PBXNativeTarget "BillingServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17B6A87198B5A120056198F /* Debug */,
+				A17B6A88198B5A120056198F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A17B6A5E198B5A120056198F /* Project object */;
+}
