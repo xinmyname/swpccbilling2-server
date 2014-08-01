@@ -1,5 +1,5 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/CocoaAsyncSocket" "${PODS_ROOT}/Headers/CocoaHTTPServer" "${PODS_ROOT}/Headers/CocoaLumberjack" "${PODS_ROOT}/Headers/FMDB" "$(SDKROOT)/usr/include/libxml2"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/CocoaAsyncSocket" -isystem "${PODS_ROOT}/Headers/CocoaHTTPServer" -isystem "${PODS_ROOT}/Headers/CocoaLumberjack" -isystem "${PODS_ROOT}/Headers/FMDB"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/CocoaAsyncSocket" "${PODS_ROOT}/Headers/CocoaHTTPServer" "${PODS_ROOT}/Headers/CocoaLumberjack" "${PODS_ROOT}/Headers/FMDB" "${PODS_ROOT}/Headers/InflectorKit" "$(SDKROOT)/usr/include/libxml2"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/CocoaAsyncSocket" -isystem "${PODS_ROOT}/Headers/CocoaHTTPServer" -isystem "${PODS_ROOT}/Headers/CocoaLumberjack" -isystem "${PODS_ROOT}/Headers/FMDB" -isystem "${PODS_ROOT}/Headers/InflectorKit"
 OTHER_LDFLAGS = -ObjC -lsqlite3 -lxml2 -framework CoreServices -framework Security
 PODS_ROOT = ${SRCROOT}/Pods

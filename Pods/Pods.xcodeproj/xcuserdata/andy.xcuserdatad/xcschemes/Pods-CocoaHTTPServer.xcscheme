@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "829978791735475BA1149586"
+               BlueprintIdentifier = "19450BD7E83F46D5B6A69C8D"
                BuildableName = "libPods-CocoaHTTPServer.a"
                BlueprintName = "Pods-CocoaHTTPServer"
                ReferencedContainer = "container:Pods.xcodeproj">

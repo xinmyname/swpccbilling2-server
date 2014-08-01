@@ -1,40 +1,107 @@
 //
-//  BillingServerTests.m
-//  BillingServerTests
+//  RouteEmTests.m
+//  RouteEmTests
 //
 //  Created by Andy Sherwood on 7/31/14.
 //  Copyright (c) 2014 Andy Sherwood. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
+#import "Route.h"
+#import "Router.h"
 
 @interface BillingServerTests : XCTestCase
 
 @end
 
 @implementation BillingServerTests
+{
+    Router* _router;
+}
 
-- (void)setUp {
+- (void)setUp
+{
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    _router = [[Router alloc] initWithPrefix:@"/api"];
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+- (void)testActionForGETWithoutItemId_IsFindAll
+{
+    Route* route = [_router routeForVerb:@"GET" withPath:nil];
+    XCTAssertEqual([route action], RouteActionFindAll);
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testActionForPOSTWithoutItemId_IsCreate
+{
+    Route* route = [_router routeForVerb:@"POST" withPath:nil];
+    XCTAssertEqual([route action], RouteActionCreate);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testActionForGETWithItemId_IsFind
+{
+    Route* route = [_router routeForVerb:@"GET" withPath:@"/api/sample/42"];
+    XCTAssertEqual([route action], RouteActionFind);
+}
+
+- (void)testActionForPUTWithItemId_IsUpdate
+{
+    Route* route = [_router routeForVerb:@"PUT" withPath:@"/api/sample/42"];
+    XCTAssertEqual([route action], RouteActionUpdate);
+}
+
+- (void)testActionForDELETEWithItemId_IsDelete
+{
+    Route* route = [_router routeForVerb:@"DELETE" withPath:@"/api/sample/42"];
+    XCTAssertEqual([route action], RouteActionDelete);
+}
+
+- (void)testControllerForEmptyPath_IsNil
+{
+    Route* route = [_router routeForVerb:nil withPath:nil];
+    XCTAssertNil([route controller]);
+}
+
+- (void)testControllerForIncorrectPrefix_IsNil
+{
+    Route* route = [_router routeForVerb:nil withPath:@"/ipa/samples"];
+    XCTAssertNil([route controller]);
+}
+
+- (void)testControllerWithoutId_IsCapitalized
+{
+    Route* route = [_router routeForVerb:nil withPath:@"/api/sample"];
+    XCTAssert([[route controller] isEqualToString:@"Sample"]);
+}
+
+- (void)testControllerWithoutId_IsSinglular
+{
+    Route* route = [_router routeForVerb:nil withPath:@"/api/samples"];
+    XCTAssert([[route controller] isEqualToString:@"Sample"]);
+}
+
+- (void)testControllerWithId_IsCapitalized
+{
+    Route* route = [_router routeForVerb:nil withPath:@"/api/sample/42"];
+    XCTAssert([[route controller] isEqualToString:@"Sample"]);
+}
+
+- (void)testControllerWithId_IsSinglular
+{
+    Route* route = [_router routeForVerb:nil withPath:@"/api/samples/42"];
+    XCTAssert([[route controller] isEqualToString:@"Sample"]);
+}
+
+- (void)testItemIdForPathWithoutItemId_IsNil
+{
+    Route* route = [_router routeForVerb:nil withPath:@"/api/samples"];
+    XCTAssertNil([route itemId]);
+}
+
+- (void)testItemIdInPath_IsCorrect
+{
+    Route* route = [_router routeForVerb:nil withPath:@"/api/samples/42"];
+    XCTAssert([[route itemId] isEqualToString:@"42"]);
 }
 
 @end

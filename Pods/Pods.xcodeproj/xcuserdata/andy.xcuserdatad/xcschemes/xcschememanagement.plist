@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-InflectorKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>35B3348FE9FE42CCB4C92D81</key>
+		<key>001028AC20594345BCDD8409</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3B82035BB8A0437EACB5E6EF</key>
+		<key>1382FAF9619D4A77A570478D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>427D54A1D5044DD19EA27310</key>
+		<key>19450BD7E83F46D5B6A69C8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6004B2BF2C8C490AA305EB85</key>
+		<key>48197C6F7A2447EDBA3F05F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>829978791735475BA1149586</key>
+		<key>8E92B16BDB29468D84DE72C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1DBDCED1E1E443BB4586C6F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
