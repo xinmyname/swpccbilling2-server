@@ -97,4 +97,9 @@
     return [[HTTPDataResponse alloc] initWithData:responseData];
 }
 
+- (void)processBodyData:(NSData *)postDataChunk
+{
+    [request appendData:postDataChunk];
+}
+
 @end
