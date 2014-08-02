@@ -1,0 +1,19 @@
+{
+	"family":
+	{
+		"id":1,
+		"name":"Sherwood/Odman",
+		"streetAddress":"5316 SW Boundary St",
+		"city":"Portland",
+		"state":"OR",
+		"zip":"97221",
+		"dueDay":10,
+		"numChildren":1,
+		"billableDays":2,
+		"disposition":0,
+		"isGraduating":0,
+		"checkSHA256":"",
+		"joined":"2012-09-01T12:00:00",
+		"departed":null
+	}
+}
