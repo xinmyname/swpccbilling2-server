@@ -1,11 +1,3 @@
-//
-//  FamilyController.m
-//  BillingServer
-//
-//  Created by Andy Sherwood on 8/1/14.
-//  Copyright (c) 2014 Andy Sherwood. All rights reserved.
-//
-
 #import "FamilyController.h"
 
 @implementation FamilyController
@@ -20,19 +12,20 @@
     return @[@{@"id":@42, @"name":@"item"}];
 }
 
-- (NSNumber*)updateItemId:(NSString*)itemId withJson:(NSDictionary*)json
+- (NSDictionary*)updateItemWithId:(NSString*)itemId andJson:(NSDictionary*)json
 {
-    return [NSNumber numberWithInt:42];
+    return json;
 }
 
-- (NSString*)create:(NSDictionary*)json
+- (NSDictionary*)createWithJson:(NSDictionary*)json
 {
-    return @"42";
+    // return same json, but with id added in
+    return @{};
 }
 
-- (NSNumber*)deleteItemWithId:(NSString*)itemId
+- (NSDictionary*)deleteItemWithId:(NSString*)itemId
 {
-    return [NSNumber numberWithInt:42];
+    return @{};
 }
 
 

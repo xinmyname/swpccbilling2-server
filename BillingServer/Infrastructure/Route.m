@@ -1,11 +1,3 @@
-//
-//  Route.m
-//  RegExTest
-//
-//  Created by Andy Sherwood on 7/31/14.
-//  Copyright (c) 2014 Clean Water Services. All rights reserved.
-//
-
 #import "Route.h"
 
 @implementation Route

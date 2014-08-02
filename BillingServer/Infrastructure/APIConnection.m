@@ -1,11 +1,3 @@
-//
-//  APIConnection.m
-//  BillingServer
-//
-//  Created by Andy Sherwood on 7/31/14.
-//  Copyright (c) 2014 Andy Sherwood. All rights reserved.
-//
-
 #import "APIConnection.h"
 #import "ControllerDelegate.h"
 #import "Router.h"
@@ -83,7 +75,7 @@
             NSData* postData = [request body];
             NSError* error = nil;
             NSDictionary* requestJson = [NSJSONSerialization JSONObjectWithData:postData options:0 error:&error];
-            result = [controller updateItemId:[route itemId] withJson:requestJson];
+            result = [controller updateItemWithId:[route itemId] andJson:requestJson];
             break;
         }
         case RouteActionCreate:
@@ -91,7 +83,7 @@
             NSData* postData = [request body];
             NSError* error = nil;
             NSDictionary* requestJson = [NSJSONSerialization JSONObjectWithData:postData options:0 error:&error];
-            result = [controller create:requestJson];
+            result = [controller createWithJson:requestJson];
             break;
         }
         case RouteActionDelete:
