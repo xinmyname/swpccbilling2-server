@@ -91,6 +91,9 @@
             break;
     }
     
+    if (result == nil)
+        return [super httpResponseForMethod:method URI:path];
+    
     NSError* error = nil;
     NSData* responseData = [NSJSONSerialization dataWithJSONObject:result options:0 error:&error];
     

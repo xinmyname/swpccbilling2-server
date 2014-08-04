@@ -17,6 +17,7 @@
 		A17B6A8F198B62320056198F /* CreateSchema.sql in Resources */ = {isa = PBXBuildFile; fileRef = A17B6A8E198B62320056198F /* CreateSchema.sql */; };
 		A17B6A94198B63350056198F /* DatabaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A93198B63350056198F /* DatabaseFactory.m */; };
 		A17B6A99198B64F10056198F /* APIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A98198B64F10056198F /* APIConnection.m */; };
+		A194B874198E11FE00AF7188 /* FMResultSetExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A194B873198E11FE00AF7188 /* FMResultSetExtensions.m */; };
 		A1FD6816198B6A580073705C /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FD6813198B6A580073705C /* Route.m */; };
 		A1FD6817198B6A580073705C /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FD6815198B6A580073705C /* Router.m */; };
 		BDC66C7517DD4EE3A8FCB582 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBC5D73E8964D9798BF42ED /* libPods.a */; };
@@ -54,6 +55,8 @@
 		A17B6A93198B63350056198F /* DatabaseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatabaseFactory.m; path = Infrastructure/DatabaseFactory.m; sourceTree = "<group>"; };
 		A17B6A97198B64F10056198F /* APIConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIConnection.h; path = Infrastructure/APIConnection.h; sourceTree = "<group>"; };
 		A17B6A98198B64F10056198F /* APIConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIConnection.m; path = Infrastructure/APIConnection.m; sourceTree = "<group>"; };
+		A194B872198E11FE00AF7188 /* FMResultSetExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSetExtensions.h; path = Infrastructure/FMResultSetExtensions.h; sourceTree = "<group>"; };
+		A194B873198E11FE00AF7188 /* FMResultSetExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSetExtensions.m; path = Infrastructure/FMResultSetExtensions.m; sourceTree = "<group>"; };
 		A1FD6812198B6A580073705C /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Route.h; path = Infrastructure/Route.h; sourceTree = "<group>"; };
 		A1FD6813198B6A580073705C /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Route.m; path = Infrastructure/Route.m; sourceTree = "<group>"; };
 		A1FD6814198B6A580073705C /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Router.h; path = Infrastructure/Router.h; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				A17B6A93198B63350056198F /* DatabaseFactory.m */,
 				A17B6A97198B64F10056198F /* APIConnection.h */,
 				A17B6A98198B64F10056198F /* APIConnection.m */,
+				A194B872198E11FE00AF7188 /* FMResultSetExtensions.h */,
+				A194B873198E11FE00AF7188 /* FMResultSetExtensions.m */,
 			);
 			name = Infrastructure;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A194B874198E11FE00AF7188 /* FMResultSetExtensions.m in Sources */,
 				A17B6A94198B63350056198F /* DatabaseFactory.m in Sources */,
 				A17B6A6F198B5A120056198F /* AppDelegate.m in Sources */,
 				A1FD6816198B6A580073705C /* Route.m in Sources */,
