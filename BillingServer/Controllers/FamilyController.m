@@ -31,10 +31,10 @@
     
     [db close];
     
-    return item;
+    return @{@"family": item ? item : [NSNull null]};
 }
 
-- (NSArray*)findAllItems
+- (NSDictionary*)findAllItems
 {
     NSMutableArray* items = [[NSMutableArray alloc] init];
     FMDatabase* db = [_dbFactory openDatabase];
@@ -48,7 +48,7 @@
     
     [db close];
     
-    return items;
+    return @{@"families": items};
 }
 
 - (NSDictionary*)updateItemWithId:(NSString*)itemId andJson:(NSDictionary*)json
@@ -80,45 +80,45 @@
 
 - (NSDictionary*)createWithJson:(NSDictionary*)json
 {
-    id family = [[NSMutableDictionary alloc] initWithDictionary:[json objectForKey:@"family"]];
+    id item = [[NSMutableDictionary alloc] initWithDictionary:[json objectForKey:@"family"]];
     
     FMDatabase* db = [_dbFactory openDatabase];
     
     [db executeUpdate:@"INSERT INTO Family VALUES (NULL,?,?,?,?,?,?,?,?,?,?,?,?,?)",
-     [family objectForKey:@"name"],
-     [family objectForKey:@"streetAddress"],
-     [family objectForKey:@"city"],
-     [family objectForKey:@"state"],
-     [family objectForKey:@"zip"],
-     [family objectForKey:@"dueDay"],
-     [family objectForKey:@"numChildren"],
-     [family objectForKey:@"billableDays"],
-     [family objectForKey:@"disposition"],
-     [family objectForKey:@"isGraduating"],
-     [family objectForKey:@"checkSHA256"],
-     [family objectForKey:@"joined"],
-     [family objectForKey:@"departed"]
+     [item objectForKey:@"name"],
+     [item objectForKey:@"streetAddress"],
+     [item objectForKey:@"city"],
+     [item objectForKey:@"state"],
+     [item objectForKey:@"zip"],
+     [item objectForKey:@"dueDay"],
+     [item objectForKey:@"numChildren"],
+     [item objectForKey:@"billableDays"],
+     [item objectForKey:@"disposition"],
+     [item objectForKey:@"isGraduating"],
+     [item objectForKey:@"checkSHA256"],
+     [item objectForKey:@"joined"],
+     [item objectForKey:@"departed"]
      ];
     
-    FMResultSet* resultSet = [db executeQuery:@"SELECT MAX(Id) FROM Family"];
+    FMResultSet* results = [db executeQuery:@"SELECT MAX(Id) FROM Family"];
     
-    if ([resultSet next])
+    if ([results next])
     {
-        int itemId = [resultSet intForColumnIndex:0];
-        NSNumber* itemIdNum = [NSNumber numberWithInt:itemId];
-        [family setObject:itemIdNum forKey:@"id"];
+        int col = 0;
+        NSNumber* itemId = [results nextIntNumber:&col];
+        [item setObject:itemId forKey:@"id"];
     }
     
     [db close];
     
-    return @{@"family":family};
+    return @{@"family":item};
 }
 
 - (NSDictionary*)deleteItemWithId:(NSString*)itemId
 {
     FMDatabase* db = [_dbFactory openDatabase];
     
-    [db executeUpdate:@"DELETE FROM Family WHERE id=?", itemId];
+    [db executeUpdate:@"DELETE FROM Family WHERE Id=?", itemId];
     
     [db close];
     

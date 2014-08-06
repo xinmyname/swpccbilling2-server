@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A1533E6E198C31B4009C4A32 /* FamilyController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1533E6D198C31B4009C4A32 /* FamilyController.m */; };
+		A15CC271199122C50005EBD1 /* FeeController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15CC270199122C50005EBD1 /* FeeController.m */; };
 		A17B6A6C198B5A120056198F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A6B198B5A120056198F /* main.m */; };
 		A17B6A6F198B5A120056198F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A17B6A6E198B5A120056198F /* AppDelegate.m */; };
 		A17B6A71198B5A120056198F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17B6A70198B5A120056198F /* Images.xcassets */; };
@@ -39,6 +40,8 @@
 		A1533E6B198C3141009C4A32 /* ControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControllerDelegate.h; path = Infrastructure/ControllerDelegate.h; sourceTree = "<group>"; };
 		A1533E6C198C31B4009C4A32 /* FamilyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FamilyController.h; path = Controllers/FamilyController.h; sourceTree = "<group>"; };
 		A1533E6D198C31B4009C4A32 /* FamilyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FamilyController.m; path = Controllers/FamilyController.m; sourceTree = "<group>"; };
+		A15CC26F199122C50005EBD1 /* FeeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeeController.h; path = Controllers/FeeController.h; sourceTree = "<group>"; };
+		A15CC270199122C50005EBD1 /* FeeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeeController.m; path = Controllers/FeeController.m; sourceTree = "<group>"; };
 		A17B6A66198B5A120056198F /* BillingServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillingServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17B6A6A198B5A120056198F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A17B6A6B198B5A120056198F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 			children = (
 				A1533E6C198C31B4009C4A32 /* FamilyController.h */,
 				A1533E6D198C31B4009C4A32 /* FamilyController.m */,
+				A15CC26F199122C50005EBD1 /* FeeController.h */,
+				A15CC270199122C50005EBD1 /* FeeController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				A1FD6816198B6A580073705C /* Route.m in Sources */,
 				A17B6A99198B64F10056198F /* APIConnection.m in Sources */,
 				A1FD6817198B6A580073705C /* Router.m in Sources */,
+				A15CC271199122C50005EBD1 /* FeeController.m in Sources */,
 				A1533E6E198C31B4009C4A32 /* FamilyController.m in Sources */,
 				A17B6A6C198B5A120056198F /* main.m in Sources */,
 			);
